@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Share Modal</title>
+    <!-- I'm using Font Awesome for the icons -->
+    <!-- Source Code in the description -->
+</head>
+<body>
+    <button class="share-btn">
+        <i class="fas fa-share"></i>
+        <span>Share</span>
+    </button>
+    <div class="modal">
+        <div class="top">
+            <h2>Share Modal</h2>
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="middle">
+            <p>Share the link via</p>
+            <div class="social">
+                <span>
+                    <i class="fab fa-facebook"></i>
+                </span>
+                <span>
+                    <i class="fab fa-instagram"></i>
+                </span>
+                <span>
+                    <i class="fab fa-twitter"></i>
+                </span>
+                <span>
+                    <i class="fab fa-linkedin"></i>
+                </span>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>Copy link</p>
+            <div class="copy-container">
+                <div class="left">
+                    <i class="fas fa-link"></i>
+                    <span>https://example.com</span>
+                </div>
+                <div class="right">
+                    <i class="fas fa-copy"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const share_btn = document.querySelector('.share-btn');
+        const modal = document.querySelector('.modal');
+        const x_btn = document.querySelector('.top i');
+
+        share_btn.addEventListener('click', () => {
+            modal.style.display = 'block'
+        })
+        x_btn.addEventListener('click', () => {
+            modal.style.display = 'none'
+        })
+    </script>
+</body>
+</html>
+<!-- that's all the HTML -->
+
+<!-- and that's all for this tutorial. Please don't forget to subscribe.... -->
